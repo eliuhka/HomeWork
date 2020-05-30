@@ -1,9 +1,7 @@
 package hello;
 
 public class Greeter extends Counter {
-
     Counter count = new Counter();
-
     public String sayHello(String name) {
         int length;
         try {
@@ -12,7 +10,6 @@ public class Greeter extends Counter {
             String error = "Error!";
             return error;
         }
-
         if (length == 1) {
             String shortName = name + ", su nimi on lühike!";
             return shortName;
@@ -21,8 +18,4 @@ public class Greeter extends Counter {
         }  else {
             String whoIs = "Kes sa oled?";
             return whoIs;
-        }
-    }
-
-}
-
+        }}}
