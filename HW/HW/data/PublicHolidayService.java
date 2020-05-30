@@ -11,13 +11,9 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.time.LocalDate;
-
-
 public class PublicHolidayService {
-
     private static final String riigikood = "EE";
     private static final String URL = "https://date.nager.at/api/v1/PublicHolidays/";
-
     public List<ZonedDateTime> getPublicHolidays(String aasta) {
         List<ZonedDateTime> result = new ArrayList<>();
         String composedUrl = URL + aasta + "/" + riigikood;
