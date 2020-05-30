@@ -10,7 +10,6 @@ import org.mockito.MockitoAnnotations;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 public class GreeterTest {
-
     @Mock
     private Counter count = new Counter();
     @InjectMocks
@@ -25,14 +24,12 @@ public class GreeterTest {
         String result = greeter.sayHello("Erki");
         assertEquals("Erki, su nimi on lühike!", result);
     }
-
     @Test
     public void greets_normal_name() {
         when(count.checkLength("Erki")).thenReturn(4);
         String result = greeter.sayHello("Erki");
         assertEquals("Tere, Erki ! Su nimi on 4 tähte pikk", result);
     }
-
     @Test
     public void greets_almost_too_long_name() {
         when(count.checkLength("x")).thenReturn(14);
