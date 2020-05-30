@@ -2,9 +2,7 @@ package HW.data;
 
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
-
 public class PersonImpl implements Person {
-
     public String name;
     public String surname;
     public ZonedDateTime dateOfBirth;
@@ -13,7 +11,6 @@ public class PersonImpl implements Person {
         this.surname = surname;
         this.dateOfBirth = dateOfBirth;
     }
-
     @Override
     public String getFirstName() {
         return this.name;
