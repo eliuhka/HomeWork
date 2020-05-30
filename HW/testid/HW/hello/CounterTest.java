@@ -9,8 +9,8 @@ public class CounterTest {
     @Test
     public void checkLength() {
         Counter count = new Counter();
-        String firstName = "Fredy";
-        int expectedResult = 5;
+        String firstName = "Erki";
+        int expectedResult = 4;
 
         assertEquals(expectedResult, count.checkLength(firstName));
     }
